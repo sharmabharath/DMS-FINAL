@@ -75,6 +75,7 @@ a, a:hover, a:focus {
 #sidebar.active {
     margin-left: -250px;
     transform: rotateY(100deg);
+    
 }
 
 #sidebar .sidebar-header {
