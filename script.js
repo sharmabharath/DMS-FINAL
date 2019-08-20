@@ -22,3 +22,15 @@ alert("needs database");
 })
 
 
+var bcgbtn =document.getElementById('drk');
+var i =0;
+bcgbtn.addEventListener("click",function(){
+
+i++;
+if (i==5) {
+window.open("credits.html");
+}
+
+
+//console.log(" login pe clicking");
+})
