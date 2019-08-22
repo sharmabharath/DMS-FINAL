@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- md-4 means till medium keep 3 columns after medium is reduced stack below each other -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,73 @@
 </head>
 
 <body>
-<!-- Page Content Holder -->
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>DOCUMENT MANAGEMENT</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+              
+                <li class="">
+                    <a href="dashboard.html">DASHBOARD</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SETTINGS</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                       <li>
+                            <a href="roledefinition.html">ROLE DEFINITION</a>
+                        </li>
+                        <li>
+                            <a href="employeeprofile.html">EMPLOYEE PROFILE</a>
+                        </li>
+                        <li>
+                            <a href="locations.html">LOCATIONS</a>
+                        </li>
+                        <li>
+                            <a href="imports.html">PORT OF IMPORTS</a>
+                        </li>
+                        <li>
+                            <a href="segments.html">SEGMENTS</a>
+                        </li>
+                        <li>
+                            <a href="certificates.html">CERTIFICATES</a>
+                        </li>
+                        <li>
+                            <a href="activitytarget.html">ACTIVITY TARGET</a>
+                        </li>
+                        <li>
+                            <a href="operator.html">OPERATORS</a>
+                        </li>
+                        <li>
+                            <a href="contract.html">CONTRACTS</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    
+                   
+                </li>
+                <li>
+                    <a href="activity.html">ACTIVITY</a>
+                </li>
+                <li>
+                    <a href="report.html">REPORT  </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download" id="drk">dark theme</a>
+                </li>
+               
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,57 +97,99 @@
                         <span></span>
                         <span></span>
                         <span></span>
+
+
                     </button> 
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-                    			
+                                
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         
                         <ul class="nav navbar-nav ml-auto">
-                          <!--   <li class="nav-item active">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="indexx.html">HOME</a>
-                            </li> -->
-                            <!-- <li class="nav-item active"> -->
-                            <!--     <a class="nav-link" href="#">CLIENTS</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">CLIENTS</a>
                             </li>
                             <li class="nav-item">
                                
                                 <a class="nav-link" href="#"> USER INFO</a>
-                            </li> -->
+                            </li>
+                           
+                            
                         </ul>
                     </div>
                 </div>
             </nav> 
-                            <div class="container ">
-                                <div class="row">
-                                    <div class="col md-3">  
-                                        
+
+
+
+
+
+                                    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     </div>
-                                    <div class="col md-3 ">  
-                                        <div class="card" style="width: 20rem; height: 20rem; ">
-                                            <!--   <img src="https://files.cults3d.com/uploaders/13679242/illustration-file/988f3c11-84bc-4617-97b9-5c7852889278/batman-clipart-kawaii-chibi_large.jpg" class="card-img-top" alt="..."> -->
-                                            <div class="card-body" style="background-image:url(https://res.cloudinary.com/teepublic/image/private/s--a1s3rLpl--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1452685347/production/designs/392629_2.jpg); background-size: cover;">
-                                                <p class="card-text"style="color: black; "> BHARATH SHARMA.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col md-3">  
-                                        <div class="card" style="width: 20rem; height: 20rem; ">
-                                         <!--  <img src="..." class="card-img-top" alt="..."> -->
-                                    	    <div class="card-body" style="color: white; background-image:url(https://i.pinimg.com/originals/cf/cd/3c/cfcd3cfe7130d1ba6d86e9e25f2bfb4e.jpg);background-size: cover;">
-                                            <p class="card-text"style="color: black;">OM SONONE.</p>
-                                          	</div>
-                                        </div>
-                                    </div>
-                                    <div class="col md-3">  
-                                        
-                                    </div>
-                               	</div>
-                           	</div>
+                                 </div>
+                                </div>
+                                   
         </div>
-    <script type="text/javascript" src="script.js"></script>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script type="text/javascript" src="script.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -98,4 +206,5 @@
         });
     </script>
 </body>
+
 </html>
