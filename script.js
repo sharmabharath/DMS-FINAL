@@ -34,6 +34,34 @@ window.open("credits.html");
 
 //console.log(" login pe clicking");
 })
+var dashbrd =document.getElementById('dash');
+dashbrd.addEventListener("click",function(){
+
+
+alert(" PLEASE LOGIN TO ACCESS DASHBOARD");
+})
+
+
+var sett =document.getElementById('set');
+sett.addEventListener("click",function(){
+
+
+alert("PLEASE LOGIN TO ACCESS SETTINGS");
+})
+
+var actt =document.getElementById('act');
+actt.addEventListener("click",function(){
+//yaha 
+
+alert("PLEASE LOGIN TO ACCESS ACTIVITY");
+})
+
+var rept =document.getElementById('rep');
+rept.addEventListener("click",function(){
+//yaha 
+
+alert("PLEASE LOGIN TO ACCESS REPORT");
+})
 
 
 
