@@ -9,11 +9,8 @@ else
 {
 	alert("wrong credentials!!!");
 }
-
 //console.log(" login pe clicking");
 })
-
-
 var logbtn =document.getElementById('fgt');
 logbtn.addEventListener("click",function(){
 //yaha 
