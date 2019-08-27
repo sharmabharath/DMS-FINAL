@@ -63,3 +63,13 @@ alert("PLEASE LOGIN TO ACCESS REPORT");
 
 
 
+var dark = document.getElementById("drk");
+
+
+
+dark.addEventListener("click", function setBcg() {
+  document.body.style.backgroundColor = "black";
+   
+
+	
+});
