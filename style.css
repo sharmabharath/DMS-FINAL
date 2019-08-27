@@ -14,7 +14,13 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #ecf0f1;
 }
+.dropdown, {
+    width: 120px;
+}
 
+.btn-group{
+    width: 200px;
+}
 .card-body{
     background-color:#f0f0f0;
     color: black;
@@ -75,7 +81,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background:#505050;
     color: #fff;
     transition: all 0.4s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -89,7 +95,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #505050;
 }
 
 #sidebar ul.components {
@@ -114,9 +120,8 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #7386D5;
+    background: #505050;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -133,7 +138,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #505050;
 }
 
 ul.CTAs {
@@ -159,6 +164,7 @@ a.article, a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
+
 
 
 

@@ -18,19 +18,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
-
     <div class="wrapper" id="body">
-
         <!-- Sidebar Holder -->
         <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>DOCUMENT MANAGEMENT</h3>
-            </div>
-
             <ul class="list-unstyled components">
-              
                 <li class="">
                     <a href="#" id="dash">DASHBOARD</a>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="set">SETTINGS</a>
@@ -66,83 +58,60 @@
                     </ul>
                 </li>
                 <li>
-                    
-                   
-                </li>
-                <li>
                     <a href="#" id="act">ACTIVITY</a>
                 </li>
                 <li>
                     <a href="#" id="rep">REPORT  </a>
                 </li>
             </ul>
-
             <ul class="list-unstyled CTAs">
                 <li>
                     <a href="#" class="download" id="drk">dark theme</a>
                 </li>
-               
+               <li>
+                    <a href="#" class="download" id="lgt">light theme</a>
+                </li>
             </ul>
         </nav>
-
         <!-- Page Content Holder -->
         <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button type="button" id="sidebarCollapse" class="navbar-btn" style="margin-right: 3%">
                         <span></span>
                         <span></span>
                         <span></span>
-
-
-                    </button> 
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
                     </button>
-                    			
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-
-                                <a class="nav-link" href="indexx.html">   <i class="fas fa-home" style="padding-right: 1%; width:40px;" ></i>HOME</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">CLIENTS</a>
-                            </li>
-                            <li class="nav-item">
-                               
-                                <a class="nav-link" href="#"> USER INFO</a>
-                            </li>
-                           
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav> 
+                    
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="indexx.html" class="navbar-brand">Company</a>
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                        </div>
+                    </nav>
                             <div class="container1">
                                 <div class="row">
                                     <div class="col md-4">  
                                     </div>
-                                    <div class="col md-4 text-center">  
+                                    <div class="card" style="width: 425px;">
+                                      <div class="card-body" style="background-color: #f0f0f0">
+                                        <div class="col md-4 text-center">  
                                         <div class="login-box" style=" width: 280px; position: relative;top:20%;left:10%; color: black;">
-                                            <h2 style=" float :top; border-bottom: 4px solid #7386D5;padding: 14px 0 ;"><i class="fas fa-user-lock text-left"style="width:100px;"></i>LOGIN</h1>
-                                                
-	                                                <div class="textbox" style="width: 100%; ;font-size: 30px;padding: 8px 0;margin: 8px 0;border: 1px solid black; "> 
-	                                                    <input id="uid" style="background:none;border:none;outline: none; padding-left: 8px; padding-right: 8px; color:black;" type="text" placeholder="  username" name="" value="">
-	                                                </div>
+                                            <h2 style=" float :top; border-bottom: 4px solid #505050;padding: 14px 0 ;"><i class="fas fa-user-lock text-left"style="width:100%;"></i>LOGIN</h2>
+                                                    <div class="textbox" style="width: 100%;font-size: 30px;padding: 8px ;margin-right:20%;border: 1px solid black; "> 
+                                                        <input id="uid" style="background:none;border:none;outline: none; padding-left: 8px; padding-right: 8px; color:black;" type="text" placeholder="  username" name="" value="">
+                                                    </div>
 
                                                     <div class="textbox" style="width: 100%; ;font-size: 30px;padding: 8px 0;margin: 8px 0;border: 1px solid black;">
-                                                    	<input  id="pid" style="background:none;border: none;outline:none;padding-left: 8px;padding-right: 8px; color:black;" type="password" placeholder="  password" name="" value="">
-                                                	</div>
-                                                		<input class="btn btn-outline-success" id="lgn"  type="button" name="login" value="login" style="color: black;  width:50%;position: relative; p-1;">
-                                                		<input class="btn btn-outline-warning" id="fgt" type="button" name="forgot" value="forgot password" style="color:black; width:50%; position: relative; top: 7px;">
+                                                        <input  id="pid" style="background:none;border: none;outline:none;padding-left: 8px;padding-right: 8px; color:black;" type="password" placeholder="  password" name="" value="">
+                                                    </div>
+                                                        <input class="btn btn-outline-success" id="lgn"  type="button" name="login" value="login" style="color: black;  width:50%;position: relative; p-1;">
+                                                        <input class="btn btn-outline-warning" id="fgt" type="button" name="forgot" value="forgot password" style="color:black; width:50%; position: relative; top: 7px;">
                                         </div>
                                     </div>
+                                      </div>
+                                    </div>
+                                    
                                     <div class="col md-4">  
                                         
 

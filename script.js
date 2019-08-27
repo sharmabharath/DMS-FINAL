@@ -64,12 +64,12 @@ alert("PLEASE LOGIN TO ACCESS REPORT");
 
 
 var dark = document.getElementById("drk");
-
-
-
 dark.addEventListener("click", function setBcg() {
-  document.body.style.backgroundColor = "black";
-   
-
-	
+  document.body.style.backgroundColor = "#282828";
 });
+
+var ligt = document.getElementById("lgt");
+ligt.addEventListener("click", function setBcg() {
+  document.body.style.backgroundColor = "white";
+});
+
