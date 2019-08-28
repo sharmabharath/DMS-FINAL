@@ -73,3 +73,11 @@ ligt.addEventListener("click", function setBcg() {
   document.body.style.backgroundColor = "white";
 });
 
+
+var srch =document.getElementById('srch');
+srch.addEventListener("click",function(){
+//yaha 
+
+alert("PLEASE LOGIN TO ACCESS REPORT");
+})
+

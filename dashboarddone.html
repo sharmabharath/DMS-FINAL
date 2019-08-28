@@ -19,14 +19,26 @@
 
 </head>
 
-<body>
+<body id="body">
+        <script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("body").innerHTML = txt;
+}
+</script>
+
 
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <ul class="list-unstyled components">
                 <li class="">
-                    <a href="dashboard.html">DASHBOARD</a>
+                    <a href="dashboard.html">DASHBOARD </a>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">SETTINGS</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
