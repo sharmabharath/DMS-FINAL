@@ -7,20 +7,17 @@ img
 /*
     DEMO STYLE
 */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Livvic', sans-serif;
     background: #ecf0f1;
 }
 .dropdown, {
     width: 120px;
 }
 
-.btn-group{
-    width: 200px;
-}
 .card-body{
     background-color:#f0f0f0;
     color: black;
