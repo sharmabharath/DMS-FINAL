@@ -18,6 +18,15 @@ logbtn.addEventListener("click",function(){
 alert("needs database");
 })
 
+var dark = document.getElementById("drk");
+dark.addEventListener("click", function setBcg() {
+  document.body.style.backgroundColor = "#282828";
+});
+
+var ligt = document.getElementById("lgt");
+ligt.addEventListener("click", function setBcg() {
+  document.body.style.backgroundColor = "white";
+});
 
 var bcgbtn =document.getElementById('drk');
 var i =0;
@@ -59,20 +68,6 @@ rept.addEventListener("click",function(){
 
 alert("PLEASE LOGIN TO ACCESS REPORT");
 })
-
-
-
-
-var dark = document.getElementById("drk");
-dark.addEventListener("click", function setBcg() {
-  document.body.style.backgroundColor = "#282828";
-});
-
-var ligt = document.getElementById("lgt");
-ligt.addEventListener("click", function setBcg() {
-  document.body.style.backgroundColor = "white";
-});
-
 
 var srch =document.getElementById('srch');
 srch.addEventListener("click",function(){

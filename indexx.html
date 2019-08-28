@@ -24,7 +24,7 @@
         <nav id="sidebar">
             <ul class="list-unstyled components" style="">
                 <li class="">
-                    <a href="#" id="dash">DASHBOARD</a>
+                    <a href="dashboard.html" id="dash">DASHBOARD</a>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="set">SETTINGS</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                        <li>
@@ -89,7 +89,69 @@
                         <div id="navbarCollapse" class="collapse navbar-collapse">
                         </div>
                     </nav>
-                            <div class="container1">
+                    <div>
+                        <br><br><br><br>
+                        <h2 style="text-align: center;" >Click below to login</h2>
+                                <button onclick="document.getElementById('id01').style.display='block'" style="background-color: #4CAF50;
+                                  color: white;
+                                  padding: 14px 20px;
+                                  margin: auto;
+                                  display: block;
+                                  border: none;
+                                  cursor: pointer;
+                                  width: 20%;
+                                  ">Login</button>
+                                <div id="id01" class="modal">
+                                  <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                      
+                                    </div>
+                                    <div class="container2">
+                                        <h3>Login</h3><br>
+                                      <label for="uname"><b>Username</b></label>
+                                      <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                      <label for="psw"><b>Password</b></label>
+                                      <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                      <button type="submit" href="dashboard.html"style=" background-color: #4CAF50;
+                                                                    color: white;
+                                                                    padding: 14px 20px;
+                                                                    margin: 8px 0;
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    width: 100%;">Login</button>
+                                      <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                      </label>                             
+                                </div>
+                                <div class="container2" style="background-color:#f1f1f1">
+                                  <button type="button" style=" background-color: #4CAF50;
+                                                                color: white;
+                                                                padding: 10px 10px;
+                                                                margin: 8px 0;
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                width: 30%;" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                              </form>
+            </div>                  
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                            <!-- <div class="container1">
                                 <div class="row">
                                     <div class="col md-4">  
                                     </div>
@@ -121,7 +183,7 @@
                                         
                                 </div>
                             </div>
-        </div>
+        </div> -->
                                    
     </div>
 
