@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!-- md-4 means till medium keep 3 columns after medium is reduced stack below each other -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DOCUMENT MANAGEMENT SYSTEM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="pdfobject.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/pdfobject.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper" id="body">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components" style="">
+                <li class="">
+                    <a href="dashboard.html" id="dash">DASHBOARD</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" id="set">SETTINGS</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                       <li>
+                            <a href="#">ROLE DEFINITION</a>
+                        </li>
+                        <li>
+                            <a href="#">EMPLOYEE PROFILE</a>
+                        </li>
+                        <li>
+                            <a href="#">LOCATIONS</a>
+                        </li>
+                        <li>
+                        <li>
+                            <a href="#">PORTS AND SEGMENTS</a>
+                        </li>
+                        <li>
+                            <a href="#">CERTIFICATES</a>
+                        </li>
+                        <li>
+                            <a href="#">ACTIVITY TARGET</a>
+                        </li>
+                        <li>
+                            <a href="#">OPERATORS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTRACTS</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="act">ACTIVITY</a>
+                </li>
+                <li>
+                    <a href="#" id="rep">REPORT  </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download" id="drk">dark theme</a>
+                </li>
+               <li>
+                    <a href="#" class="download" id="lgt">light theme</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+             <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button type="button" id="sidebarCollapse" class="navbar-btn" style="margin-right: 3%">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="indexx.html" class="navbar-brand">Company</a>
+                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item dropdown" style="width: 120px;">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
+                                    <div class="dropdown-menu" >
+                                        <a href="#" class="dropdown-item">Inbox</a>
+                                        <a href="#" class="dropdown-item">Drafts</a>
+                                        <a href="#" class="dropdown-item">Sent Items</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#"class="dropdown-item">Trash</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav nav ml-auto"  >
+                                <li class="nav-item dropdown" >
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="width: 80px;">User</a>
+                                    <div class="dropdown-menu dropdown-menu-right" >
+                                        <a href="#" class="dropdown-item">Profile</a>
+                                        <a href="#" class="dropdown-item">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="#"class="dropdown-item">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="container4" style="padding:10px 10px;">
+                        <h1>View</h1>
+                        <div id="pdf_view"></div>
+                    </div>
+  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    PDFObject.embed("pdfobject_sample.pdf", "#pdf_view");
+  });
+</script>
+
+
+     <script type="text/javascript" src="script.js"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
