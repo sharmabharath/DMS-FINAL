@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+       <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 </head>
 
 <body>
@@ -62,22 +66,11 @@
                     </ul>
                 </li>
                 <li>
-                    
-                   
-                </li>
-                <li>
                     <a href="activity.html">ACTIVITY</a>
                 </li>
                 <li>
                     <a href="report.html">REPORT  </a>
                 </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="#" class="download" id="drk">dark theme</a>
-                </li>
-               
             </ul>
         </nav>
 
@@ -120,187 +113,167 @@
                             </ul>
                         </div>
                     </nav>
-                    <div class="container-fluid">
-                        <div class="row">
-                                        <div class="col-lg-12">
-                                          <h3> OPERATORS</h3></div>
-                                      </div>
-                                      <br>
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                               
-                                                <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 18px;  width: 200px;height: 9px; background-color: none;">
-                                                <button  class="btn btn-primary">search</button>
-                                            </div>
-                                            <div class="col-lg-1 col-sm-6">
-                                                 <a href="#" class="btn btn-success" style="margin-top: 10px; margin-bottom: 10px;">add</a> 
-                                            </div>
-                                            <div class="col-lg-1 col-sm-6">
-                                                 <a href="#" class="btn btn-success" style="margin-top: 10px; margin-bottom: 10px;">edit</a> 
-                                            </div>
-                                            <div class="col-lg-1 col-sm-6">
-                                                 <a href="#" class="btn btn-danger" style="margin-top: 10px; margin-bottom: 10px;">delete</a>
-                                            </div>
-                                            <div class="col-lg-1 col-sm-6">
-                                                 <a href="#" class="btn btn-primary"style="margin-top: 10px; margin-bottom: 10px;">save</a>
+                                <div class="container-fluid">
+                                    <div class="table-wrapper">
+                                        <div class="table-title">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-6">
+                                                    <h2><b>Operators</b></h2>
+                                                </div>
+                                                <div class="col-lg-2 col-md-6" style="padding: none; ">
+                                                    <a href="#" class="btn btn-primary" style="padding-top: 6px; margin: 10px;" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons" style="padding: 2px;">&#xE147;</i> <span>Add New Operator</span></a>
+                                                            <div id="id01" class="modal">
+                                                                  <form class="modal-contentoper animate" action="/action_page.php">
+                                                                    <div class="imgcontainer">
+                                                                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                                    </div>
+                                                                    <h3 class="text-center" style="color: black;">Add Operator</h3>
+                                                                    <div class="container2">
+                                                                          <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputName">Name</label>
+                                                                          <input style="height:50px;"   type="text" class="form-control"  id="inputName" placeholder="Name">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputEmail">Email</label>
+                                                                          <input  type="email" class="form-control" style="height:50px; width: 100%; margin-top: 8.5px;" id="inputEmail" placeholder="Email">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="form-group col-lg-12">
+                                                                          <label for="inputAddr">Address</label>
+                                                                          <input  type="text" class="form-control" style="height:50px; width: 100%; margin-top: 8.5px;" id="inputAddr" placeholder="Address">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-12">
+                                                                          <label for="inputWebsite">Website</label>
+                                                                          <input  type="text" class="form-control" style="height:50px; width: 100%; margin-top: 8.5px;" id="inputWebsite" placeholder="Website">
+                                                                        </div>
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputCity">City</label>
+                                                                          <input style="height:50px;"   type="text" class="form-control" id="inputCity" placeholder="City">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                          <label for="inputState">State</label>
+                                                                          <input  type="text" class="form-control" id="inputState" placeholder="State">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="form-row">
+                                                                       <div class="form-group col-lg-6">
+                                                                          <label for="inputCountry">Country</label>
+                                                                          <input style="height:50px;"   type="text" class="form-control" id="inputCountry" placeholder="Country">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6" >
+                                                                          <label for="inputZip" style="margin-bottom: 16px;">Zip code</label>
+                                                                          <input style="height:50px;" type="number" min="1" class="form-control" id="inputZipCode" placeholder="Zip code">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputPhone" style="margin-bottom: 16px;">Phone</label>
+                                                                          <input style="height:50px;"   type="numebr" min="1" class="form-control" id="inputPhone" placeholder="Phone">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                          <label for="inputAdnlPhone">Adnl. Phone</label>
+                                                                          <input  type="text" class="form-control" id="inputAdnlPhone" placeholder="Adnl. Phone">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc1" style="margin-bottom: 16px;">Location 1*</label>
+                                                                          <input style="height:50px;"   type="numebr" min="1" class="form-control" id="inputLoc1" placeholder="Location 1">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc2">Location 2</label>
+                                                                          <input  type="text" class="form-control" id="inputLoc2" placeholder="Location 2">
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc3" style="margin-bottom: 16px;">Location 3</label>
+                                                                          <input style="height:50px;"   type="numebr" min="1" class="form-control" id="inputLoc3" placeholder="Location 3">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc4">Location 4</label>
+                                                                          <input  type="text" class="form-control" id="inputLoc4" placeholder="Location 4">
+                                                                        </div>
+                                                                      </div>
+                                                                        <div class="form-row">
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc5" style="margin-bottom: 16px;">Location 5</label>
+                                                                          <input style="height:50px;"   type="numebr" min="1" class="form-control" id="inputLoc5" placeholder="Location 5">
+                                                                        </div>
+                                                                        <div class="form-group col-lg-6">
+                                                                          <label for="inputLoc6">Location 6</label>
+                                                                          <input  type="text" class="form-control" id="inputLoc6" placeholder="Location 6">
+                                                                        </div>
+                                                                      </div>
+
+                                                                </div>
+                                                                <div class="container2 text-center" style="background-color:#f1f1f1">
+                                                                  <button type="button" style=" background-color: #4CAF50;
+                                                                                                color: white;
+                                                                                                padding: 10px 10px;
+                                                                                                margin: 8px 0;
+                                                                                                border: none;
+                                                                                                cursor: pointer;
+                                                                                                width: 30%;" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Add</button>
+                                                                    <button type="button" style=" background-color: #4CAF50;
+                                                                                                color: white;
+                                                                                                padding: 10px 10px;
+                                                                                                margin: 8px 0;
+                                                                                                border: none;
+                                                                                                cursor: pointer;
+                                                                                                width: 30%;" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                                </div>
+                                                              </form>
+                                                            </div>             
+                                                </div>
+                                                   <div class="md-form mt-0 col-lg-2 col-md-12">
+                                                      <input class="form-control" style="height: 40px;" type="text" placeholder="Search" aria-label="Search">
+                                                    </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-md-12"><br><br>
-                                                 <table class="table">
-                                          <thead>
-                                            <tr>
-                                              <th scope="col">#</th>
-                                              <th scope="col">First</th>
-                                              <th scope="col">Last</th>
-                                              <th scope="col">Handle</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <th scope="row">1</th>
-                                              <td>Mark</td>
-                                              <td>Otto</td>
-                                              <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                              <th scope="row">2</th>
-                                              <td>Jacob</td>
-                                              <td>Thornton</td>
-                                              <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                              <th scope="row">3</th>
-                                              <td>Larry</td>
-                                              <td>the Bird</td>
-                                              <td>@twitter</td>
-                                            </tr>
-                                          </tbody>
-                                  </table>
-
-
-
-
-
-                                               
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="row">
-                                           
-                                            <div col-lg-3>
-                                              <br><br>
-
-                                                 <div class="card " id="card1 text-alight-center"  >
-
-                                                    
-                                                    <div class="card-body" >
-                                                       <h3>OPERATORS</h3>
-                                                       <br><br><br>
-                                                       <div class="text-right">
-                                                                  NAME     
-                                                            <input  class="text"  type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             ADRESS
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             CITY
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                            STATE 
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             COUNTRY
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             PINCODE
-                                                            <input   type="date" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             
-                                                          </div>         
-                                                                </div>
-                                                </div>
-                                               
-                                            </div>
-                                            <div class="col-lg-1"></div>
-                                             <div col-lg-3>
-                                                <br><br>
-
-                                                 <div class="card " id="card1 text-alight-center"  >
-
-                                                    
-                                                    <div class="card-body" >
-                                                      <h3>EMAIL AND OTHERS</h3>
-                                                       <br><br>
-                                                       <div class="text-right">
-                                                                  EMAIL   
-                                                            <input  class="text"  type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             PHONE
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             ADDITIONAL NO
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             WEBSITE
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             <br><br><br><br>
-                                                            
-                                                          </div>         
-                                                                </div>
-                                                </div>
-                                            </div><div class="col-lg-1"></div>
-                                             <div col-lg-4>
-                                              <br><br>
-
-                                                 <div class="card " id="card1 text-alight-center"  >
-
-                                                    
-                                                    <div class="card-body" >
-                                                      <h3>LOCATION INFO</h3>
-                                                       <br><br>
-                                                       <div class="text-right">
-                                                                LOCATION  1
-                                                            <input  class="text"  type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             LOCATION  2
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             LOCATION  3
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             LOCATION  4
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                             LOCATION  5
-                                                            <input   type="text" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br>
-                                                              LOCATION  6
-                                                            <input   type="date" name="my-search" style=" border-radius: 5px;border: 1px solid grey; padding: 16px;  width: 200px;height: 9px; background-color: none;"><br><br>
-                                                             
-                                                          </div>         
-                                                                </div>
-                                                </div>
-                                                
-                                            </div>
-                                           
-                                            
-                                        </div>
-                                    </div>                  
-                                 
-
-                                    
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                   
-        </div>
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Name</th>                       
+                                                    <th>Country</th>
+                                                    <th>Email</th>
+                                                    <th>Phone</th>
+                                                    <th>Website</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a href="#">ONGC</a></td>
+                                                    <td>India</td>                        
+                                                    <td>ongc@gmail.com</td>
+                                                    <td>9837293842</td>
+                                                    <td>www.ongc.com</td>
+                                                    <td>
+                                                        <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
+                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <div class="clearfix">
+                                        <div class="hint-text">Showing <b>1</b> out of <b>1</b> entries</div>
+                                        <ul class="pagination">
+                                            <li class="page-item "><a href="#" class="page-link">Previous</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                            <li class="page-item "><a href="#" class="page-link">3</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
 
     </div>
 
