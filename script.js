@@ -3,7 +3,7 @@ logbtn.addEventListener("click",function(){
 
 //window.open("dashboard.html");
 if ( (document.getElementById('uname').value)== "admin" && (document.getElementById('pwd').value) == "1234") {
-window.open("dashboard.html","_self");
+window.open("dashboard.html");
 }
 else
 {
