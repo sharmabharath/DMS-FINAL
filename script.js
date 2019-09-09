@@ -1,9 +1,9 @@
-var logbtn =document.getElementById('lgn');
+var logbtn =document.getElementById('btn-logn');
 logbtn.addEventListener("click",function(){
 
 //window.open("dashboard.html");
-if ( (document.getElementById('uid').value)== "admin" && (document.getElementById('pid').value) == "1234") {
-window.open("dashboard.html");
+if ( (document.getElementById('uname').value)== "admin" && (document.getElementById('pwd').value) == "1234") {
+window.open("dashboard.html","_self");
 }
 else
 {
@@ -18,28 +18,13 @@ logbtn.addEventListener("click",function(){
 alert("needs database");
 })
 
-var dark = document.getElementById("drk");
-dark.addEventListener("click", function setBcg() {
-  document.body.style.backgroundColor = "#282828";
-});
+var cancel =document.getElementById('cnl');
+cancel.addEventListener("click",function(){
+//yaha 
 
-var ligt = document.getElementById("lgt");
-ligt.addEventListener("click", function setBcg() {
-  document.body.style.backgroundColor = "white";
-});
-
-var bcgbtn =document.getElementById('drk');
-var i =0;
-bcgbtn.addEventListener("click",function(){
-
-i++;
-if (i==5) {
-window.open("credits.html");
-}
-
-
-//console.log(" login pe clicking");
+window.open("indexx.html","_self");
 })
+
 var dashbrd =document.getElementById('dash');
 dashbrd.addEventListener("click",function(){
 
